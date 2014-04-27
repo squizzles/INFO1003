@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+			<title>Feedback Form</title>
+
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/foundation.css"/>
+		
+
+	
+	</head>
+		
+		
+
+	<body>
+		<!--HEADER-->
+			<div class = "row">
+				<div class= "large-12 columns">
+					<h1 class = "text-center"> Step Up </h1>
+				</div>
+			</div>
+			
+			<!--Top NAV section-->
+			<div class="contain-to-grid">
+				<nav class ="top-bar" data-topbar>
+					<ul class = "title-area">
+						<li class="name"></li>
+						<li class="toggle-topbar menu-icon"><a href="#">MENU</a></li>
+					</ul>
+
+					<section class="top-bar-section">
+						<!--RIGHT NAV SECTION-->
+						<ul class="right">
+							<li><a href="#">Sign In</a></li>
+						</ul>
+
+						<!--LEFT NAV SECTION-->
+						<ul class="left">
+							<li class = "has-form">
+								<div class ="row collapse">
+									<div class = "large-8 columns">
+										<input type="text" placeholder="Search StepUp">
+									</div>
+									<div class="large-4 columns">
+										<a href="#" class="alert button expand">Search</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</nav>
+			</div>
+
+		<!--SIDE NAV-->	
+		<div class="row">
+			<div class = "large-3 columns">
+				<ul class = "side-nav">
+					<li><a href="#">Home</a></li>
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:true"  data-dropdown="drop1">Why Bother &raquo;</a>
+						<ul id= "drop1" class ="f-dropdown" data-dropdown-content>
+							<li><a href="#">4Parents</a></li>
+							<li><a href="#">4kids</a></li>	
+						</ul>
+					</li>
+
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:true" data-dropdown="drop2">4Parents &raquo;</a>
+						<ul id= "drop2" class ="f-dropdown" data-dropdown-content>
+							<li><a href ="#">Templates</a></li>
+							<li><a href="#">Recipes</a></li>
+							<li><a href="#">Mythbusters</a></li>
+						</ul>
+					</li>
+					<li>	
+						<a href ="#" data-options="align:right" data-options="is_hover:true" data-dropdown="drop3">4Kids &raquo;</a>
+						<ul id= "drop3" class ="f-dropdown" data-dropdown-content>
+							<li><a href="#">Role Models</a></li>
+							<li><a href="#">Games</a></li>
+							<li><a href ="#">Activities</a></li>
+							<li><a href="#">BMI</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:true" data-dropdown="drop4">Resources &raquo;</a>
+						<ul id= "drop4" class ="f-dropdown" data-dropdown-content>
+							<li><a href="../resources/resources.html">Information</a></li>
+							<li><a href="../FAQ/FAQ.html">FAQ's</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Forums</a></li>	
+					<li><a href = "#">Diet & Nutrition</a></li>
+				</ul>
+			</div>
+	
+
+		<!--MAIN CONTENT-->
+			<div class = "large-9 columns">
+				<!--Feedback Form-->
+				<h2>Feedback Form</h2>
+				<!--INPUT OVERVIEW OF FORM-->
+					<div class="row">
+						<div class="large-8 columns">
+							<form id ="feedback" action="submit.html">
+					
+								<fieldset>
+									<legend>Your Details</legend>
+										<ul class="no-bullet">
+											<li>
+												<div class="row">
+													<div class="large-4 columns">	
+														<label for="nameFirst">First Name:</label>
+													</div>
+													<div class="large-8 columns">
+														<input id="nameFirst" name="nameFirst" placeholder="First Name" required="" autofocus="" type="text"/>
+													</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="large-4 columns">	
+														<label for="nameLast">Last Name:</label>
+													</div>
+													<div class="large-8 columns">
+														<input id="nameLast" name="nameLast" placeholder="Last Name" required="" autofocus="" type="text"/>
+													</div>	
+											</li>
+											<li>
+												<div class="row">
+													<div class="large-4 columns">	
+														<label for="email">Email:</label>
+													</div>
+													<div class="large-8 columns">
+														<input id="email" name="email" placeholder="blah@example.com.au" required="" autofocus="" type="text"/>
+													</div>	
+											</li>
+										</ul>
+								</fieldset>
+
+								<fieldset>
+									<legend>Feedback</legend>
+										<ul class="no-bullet">
+											<li>
+												<label for="category">Category:</label>
+												<select id="category" required="">
+													<option>Information about Health</option>
+													<option>Information about Fitness</option>
+													<option>Site design/Usability</option>
+													<option>Quality of games</option>
+													<option>Validity of Recipes</option>
+													<option>General complaints</option>
+													<option>Other</option>
+												</select>
+											</li>
+											<li>
+												<label for="comments">Comments:</label>
+												<textarea id="comments" placeholder="Enter your feedback "></textarea>
+											</li>
+										</ul>
+								</fieldset>
+								<div class="row">
+									<div class="large-5 columns large-centered">
+										<input type="submit" class="button tiny radius round" value="submit" name="buttonSubmit"/>
+										<input type = "reset" class="button alert tiny radius round" value="reset" name="buttonReset"/>
+									</div>
+								</div>
+				
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--FOOTER-->
+		<div class = "row">
+			<div class = "large-8 large-centered columns">
+				<ul class = "inline-list" >
+					<li><a href="./copyright.html">Copyright</a></li>
+					<li><a href="./faq.html">FAQ's</a></li>
+					<li><a href="./aboutUs.html">About Us</a></li>
+					<li><a href="./contactUs.html">Contact Us</a></li>
+					<li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- <script src="js/vendor/jquery.js"></script>
+		// <script src="js/foundation/foundation.js"></script>
+		// <script src="js/foundation/foundation.dropdown.js"></script> -->
+
+
+   		<script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/fastclick.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>$(document).foundation();</script>
+	</body>
+</html>
