@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+			<title>Childrens BMI calculator</title>
+
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/foundation.css"/>
+
+		<script src="js/vendor/modernizr.js"></script>
+		
+
+	</head>
+		
+		
+
+	<body>
+		<!-- Top bar -->
+		<div class="contain-to-grid sticky">
+			<nav class="top-bar" data-topbar data-options="is_hover: false">
+				<ul class="title-area">
+					<li class="name">
+						<h1><a href="#">My Site</a></h1>
+					</li>
+					<li class="toggle-topbar menu-icon">
+						<a href="#">Menu</a>
+					</li> 
+				</ul>
+				<section class="top-bar-section"> 
+					<!-- Right Nav Section -->
+					<ul class="right">
+						<li class="active">
+							<a href="#">Sign Up</a>
+						</li>
+						<li class="has-dropdown"> 
+							<a href="#">Account</a> 
+							<ul class="dropdown">
+								<li>
+								<a href="#">First link in dropdown</a>
+								</li>
+							</ul>
+						</li> 
+					</ul>
+
+					<!-- Left Nav Section -->
+					<ul class="left">
+						<li class="has-form"> 
+							<div class="row collapse"> 
+								<div class="large-8 small-9 columns">
+									<input type="text" placeholder="Find Stuff"> 
+								</div> 
+								<div class="large-4 small-3 columns">
+									<a href="#" class="alert button expand">Search</a> 
+								</div> 
+							</div>
+						</li>
+					</ul>
+				</section>
+			</nav>
+		</div>
+
+<!-- end top bar >
+		<!--HEADER-->
+			<div class = "row">
+				<div class= "large-12 columns">
+					<h1 class = "text-center"> Step Up </h1>
+				</div>
+			</div>
+			
+			<!--Top NAV section-->
+		<div class="contain-to-grid">
+			<nav class ="top-bar" data-topbar>
+				<ul class = "title-area">
+					<li class="name"></li>
+					<li class="toggle-topbar menu-icon"><a href="#">MENU</a></li>
+				</ul>
+
+				<section class="top-bar-section">
+					<!--RIGHT NAV SECTION-->
+					<ul class="right">
+						<li class="has-dropdown"> 
+							<a href="#" data-dropdown="signIn" data-options="is_hover:true">Sign In</a> 	
+							<div id="signIn" data-dropdown-content class="f-dropdown content">
+									<form>
+									  <div class="row">
+									    <div class="small-12">
+									      <div class="row">
+									        <div class="small-3 columns">
+									          <label for="right-label" class="right">Username</label>
+									        </div>
+									        <div class="small-9 columns">
+									          <input type="text" id="right-label" placeholder="Enter Usename">
+									        </div>
+									      </div>
+									      <div class="row">
+									        <div class="small-3 columns">
+									          <label for="right-label" class="right">Password</label>
+									        </div>
+									        <div class="small-9 columns">
+									          <input type="password" id="right-label" placeholder="Enter Password">
+									        </div>
+									      </div>
+									      <div class="row">
+									      	<div class="small-12 columns">
+									      		<input type="submit" value="submit">
+									    </div>
+									  </div>
+									</form>
+							</div>
+						</li> 
+					</ul>
+
+					<!--LEFT NAV SECTION-->
+					<ul class="left">
+						<li class = "has-form">
+							<div class ="row collapse">
+								<div class = "large-8 columns">
+									<input type="text" placeholder="Search StepUp">
+								</div>
+								<div class="large-4 columns">
+									<a href="#" class="alert button expand">Search</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</nav>
+		</div>
+
+
+		<!--SIDE NAV-->	
+		<div class="row">
+			<div class = "large-3 columns">
+				<ul class = "side-nav">
+					<li><a href="#">Home</a></li>
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:true"  data-dropdown="drop1">Why Bother &raquo;</a>
+						<ul id= "drop1" class ="f-dropdown" data-dropdown-content>
+							<li><a href="#">4Parents</a></li>
+							<li><a href="#">4kids</a></li>	
+						</ul>
+					</li>
+
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:false" data-dropdown="drop2">4Parents &raquo;</a>
+						<ul id= "drop2" class ="f-dropdown" data-dropdown-content>
+							<li><a href ="#">Templates</a></li>
+							<li><a href="#">Recipes</a></li>
+							<li><a href="#">Mythbusters</a></li>
+						</ul>
+					</li>
+					<li>	
+						<a href ="#" data-options="align:right" data-options="is_hover:true" data-dropdown="drop3">4Kids &raquo;</a>
+						<ul id= "drop3" class ="f-dropdown" data-dropdown-content>
+							<li><a href="#">Role Models</a></li>
+							<li><a href="#">Games</a></li>
+							<li><a href ="#">Activities</a></li>
+							<li><a href="#">BMI</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:true" data-dropdown="drop4">Resources &raquo;</a>
+						<ul id= "drop4" class ="f-dropdown" data-dropdown-content>
+							<li><a href="../resources/resources.html">Information</a></li>
+							<li><a href="../FAQ/FAQ.html">FAQ's</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Forums</a></li>	
+					<li><a href = "#">Diet & Nutrition</a></li>
+				</ul>
+			</div>
+			
+
+		<!--MAIN CONTENT-->
+			<div class = "large-9 columns">
+				<div class = "row">
+					<div class = "large-12 columns">
+						<form name="bmiForm">
+							<fieldset>
+								<legend>BMI Calculator</legend>
+
+								   <div class="row collapse">
+                              		  	<div class="large-4 columns">
+                                    		<label>Your Weight(kg):
+                                        	<input type="text" name="weight" placeholder="Weight(kg)" />
+                                   			</label>
+                               		 	</div>
+                            		</div>
+
+                           			 <div class="row collapse">
+                               			 <div class="large-4 columns">
+                                  			  	<label>Your Height(cm):
+                                       			<input type="text" name="height" placeholder="Height(cm)" />
+                                   				</label>
+                              			 </div>
+                               		 	<div class="small-3 columns">
+                                   	 		<input type="button" value="Calculate BMI" onClick="calculateBmi()" class="button postfix">
+                               			</div>
+                            		</div>
+
+                            		Your BMI: <input type="text" name="bmi" size="10"><br />
+                           			This Means: <input type="text" name="meaning" size="25"><br />
+
+		                            <div class="large-6 columns">
+		                                <label>Choose Your Favorite</label>
+		                                <input type="radio" name="gender" id="genderMale"><label for="male">Male</label>
+		                                <input type="radio" name="gender" id="genderFemale"><label for="female">Female</label>
+		                                <input type="button" value="Find out gender" onClick="checkGender()" class="button postfix">
+		                            </div>
+
+                            		<input type="reset" value="Reset" />
+							</fieldset>
+						</form>
+					</div>
+				
+							
+							
+								
+			</div>
+		</div>
+
+		<!--FOOTER-->
+		<div class = "row">
+			<div class = "large-8 large-centered columns">
+				<ul class = "inline-list" >
+					<li><a href="#">Copyright</a></li>
+					<li><a href="./faq.html">FAQ's</a></li>
+					<li><a href="./aboutUs.html">About Us</a></li>
+					<li><a href="./contactUs.html">Contact Us</a></li>
+					<li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+   		<script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/fastclick.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/bmi.js"></script>
+        <script>$(document).foundation();</script>
+	</body>
+</html>
