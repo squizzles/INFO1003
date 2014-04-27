@@ -1,0 +1,189 @@
+<!--This Page is the Contact US page -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+			<title>Contact Us</title>
+
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/foundation.css"/>
+
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+		<script type="text/javascript">
+			var myCenter=new google.maps.LatLng(-33.8884,151.193998);
+			var marker;
+
+			function initialize(){
+
+				var mapProp = {
+		 		 center:myCenter,
+		 		 zoom:16,
+			 	 mapTypeId:google.maps.MapTypeId.ROADMAP
+				 };
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			var marker=new google.maps.Marker({position: myCenter,});
+
+			marker.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		
+		
+	</head>
+		
+		
+
+	<body>
+		<!--HEADER-->
+			<div class = "row">
+				<div class= "large-12 columns">
+					<h1 class = "text-center"> Step Up </h1>
+				</div>
+			</div>
+			
+			<!--Top NAV section-->
+			<nav class ="top-bar" data-topbar>
+				<ul class = "title-area">
+					<li class="name"></li>
+					<li class="toggle-topbar menu-icon"><a href="#">MENU</a></li>
+				</ul>
+
+				<section class="top-bar-section">
+					<!--RIGHT NAV SECTION-->
+					<ul class="right">
+						<li><a href="#">Sign In</a></li>
+					</ul>
+
+					<!--LEFT NAV SECTION-->
+					<ul class="left">
+						<li class = "has-form">
+							<div class ="row collapse">
+								<div class = "large-8 columns">
+									<input type="text" placeholder="Search StepUp">
+								</div>
+								<div class="large-4 columns">
+									<a href="#" class="alert button expand">Search</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</nav>
+
+		
+		<div class="row">
+			<!--SIDE NAV-->	
+			<div class = "large-3 columns">
+				<ul class = "side-nav">
+					<li><a href="#">Home</a></li>
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:true"  data-dropdown="drop1">Why Bother &raquo;</a>
+						<ul id= "drop1" class ="f-dropdown" data-dropdown-content>
+							<li><a href="#">4Parents</a></li>
+							<li><a href="#">4kids</a></li>	
+						</ul>
+					</li>
+
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:true" data-dropdown="drop2">4Parents &raquo;</a>
+						<ul id= "drop2" class ="f-dropdown" data-dropdown-content>
+							<li><a href ="#">Templates</a></li>
+							<li><a href="#">Recipes</a></li>
+							<li><a href="#">Mythbusters</a></li>
+						</ul>
+					</li>
+					<li>	
+						<a href ="#" data-options="align:right" data-options="is_hover:true" data-dropdown="drop3">4Kids &raquo;</a>
+						<ul id= "drop3" class ="f-dropdown" data-dropdown-content>
+							<li><a href="#">Role Models</a></li>
+							<li><a href="#">Games</a></li>
+							<li><a href ="#">Activities</a></li>
+							<li><a href="#">BMI</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href ="#" data-options="align:right" data-options="is_hover:true" data-dropdown="drop4">Resources &raquo;</a>
+						<ul id= "drop4" class ="f-dropdown" data-dropdown-content>
+							<li><a href="../resources/resources.html">Information</a></li>
+							<li><a href="../FAQ/FAQ.html">FAQ's</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Forums</a></li>	
+					<li><a href = "#">Diet & Nutrition</a></li>
+				</ul>
+			</div>
+	
+
+		<!--MAIN CONTENT-->
+			<div class = "large-9 columns">
+
+				<div class="row">
+					<div class = "large-12 columns">
+						<h1 class = "text-left">Contact Us</h1>
+						<p class = "lead">We are a small group located at the University of Sydney</p>
+					</div>
+				</div>
+				<div class="row">	
+					<div class = "large-7 columns">	
+						<!--GOOGLE MAPS IS NOT INTERACTING AND IM NOT SURE WHY-->
+						<div class="flex-video" id="googleMap" style="width:350px; height:250px;"></div>
+					</div>
+
+					<div class="large-5 columns">
+						<ul class="vcard">
+							 <li class="fn">Info1003 Project Group</li>
+							 <li class="street-address">SIT Lab 117</li>
+							 <li class="locality">University of Sydney</li>
+							 <li><span class="state">NSW</span>, <span class="zip">2006</span></li>
+							 <li class="email"><a href="#">rsch5115@uni.sydney.edu.au</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class = "row">		
+					<div class = "large-12 columns">
+						
+						<ul class="no-bullet">
+							<li><h4 class = "subheader" >Contact Hours</h4></li>
+							<li><p class="lead"> Tuesdays: 11:00am - 1:00pm</p></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--FOOTER-->
+		<div class = "row">
+			
+			<div class = "large-8 large-centered  columns">
+				<ul class = "inline-list" >
+					<li><a href="#">Copyright</a></li>
+					<li><a href="./faq.html">FAQ's</a></li>
+					<li><a href="./aboutUs.html">About Us</a></li>
+					<li><a href="./contactUs.html">Contact Us</a></li>
+					<li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/foundation/foundation.dropdown.js"></script>
+		<script type="text/javascript">
+			$(document).foundation({
+  				dropdown: {
+   					 // specify the class used for active dropdowns
+   					 active_class: 'open'
+  				}
+			});
+
+		</script>
+
+	</body>
+</html>
